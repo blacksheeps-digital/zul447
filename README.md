@@ -1,9 +1,8 @@
-# Bootstrap 4 boilerplate with sass and gulp 4
+# Base dos bodi
 A Bootstrap 4.5.2 boilerplate with font-awesome5 free, sass, gulp 4 tasks, browserSync (with hot-reloading). You can override bootstrap sass variables by placing those variables in `bootstrap-4-sass-gulp-4-boilerplate/assets/scss/_bootstrap_variable_overrides.scss`
 
-- New Bootstrap v5.0.0 boilerplate with bootstrap-icons, sass, gulp 4 tasks [Bootstrap 5 boilerplate](https://github.com/JayeshLab/bootstrap-5-sass-gulp-4-boilerplate)
 
-## Pre-requisite
+## Pre-requisitos
 - [Node.js](https://nodejs.org/en/download/ "Node Js")
 -  NPM (Comes with Node.js)
 - [Gulp 4](https://gulpjs.com/ "Gulp")
@@ -16,7 +15,7 @@ Verify Gulp Cli and Gulp Local Version
 
      $ gulp --version
 
-## Getting started
+## Da clone no trem, depois muda o repositorio se não vai cagar tudo
 
 1. Clone repository:
 `git clone https://github.com/JayeshLab/bootstrap-4-sass-gulp-4-boilerplate.git`
@@ -32,3 +31,5 @@ Verify Gulp Cli and Gulp Local Version
 
   - `gulp dev`  - Starts a local server with browserSync and hot reloading on changes to files (HTML, SCSS, JS).
    
+5. Mudar pro repositório certo:
+     git remote set-url origin `git@github.com:yourname/SecondProject. git.`
