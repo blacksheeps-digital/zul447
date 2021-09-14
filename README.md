@@ -18,7 +18,7 @@ Verify Gulp Cli and Gulp Local Version
 ## Da clone no trem, depois muda o repositorio se não vai cagar tudo
 
 1. Clone repository:
-`git clone https://github.com/JayeshLab/bootstrap-4-sass-gulp-4-boilerplate.git`
+`git clone https://github.com/blacksheeps-digital/Base`
 
 2. Change directory:
 `cd bootstrap-4-sass-gulp-4-boilerplate`
@@ -32,4 +32,10 @@ Verify Gulp Cli and Gulp Local Version
   - `gulp dev`  - Starts a local server with browserSync and hot reloading on changes to files (HTML, SCSS, JS).
    
 5. Mudar pro repositório certo:
-     git remote set-url origin `git@github.com:yourname/SecondProject. git.`
+- Deletar a pasta `.git` do projeto. Ela pode estar oculta, troca lá nos settings pra achar.
+
+- Depois que a pasta estiver deletada, manda um `git init` pra noiz no command line. 
+
+- Joga esse comando depois `git remote add origin https://github.com/usuario/someDoSeuTreco.git`. 
+
+- Da um primeiro push aí parca `git push --set-upstream origin master` e já ta já. Vai ser feliz.
