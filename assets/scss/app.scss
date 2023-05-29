@@ -2,7 +2,7 @@
 @import "bootstrap_variable_overrides";
 
 // Bootstrap and its default variables
-@import "bootstrap/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Your style
 @import "variables";
@@ -10,3 +10,10 @@
 @import "general";
 @import "layout";
 @import "module";
+
+/* CUSTOM STYLES
+-------------------------------------------------- */
+//Smooth Scroll
+html {
+  scroll-behavior: smooth;
+}
