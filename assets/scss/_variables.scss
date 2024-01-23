@@ -1,1 +1,17 @@
 // Variables
+
+$primary: #447979;
+$secondary: #6dc0b4;
+$beige: #fcfbe8;
+
+.bg-green {
+    background-color: $primary;
+}
+
+.color-green {
+    color: $primary;
+}
+
+.bg-light-green {
+    background-color: $secondary;
+}
