@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Comme';
+    src: url('Comme-Black.woff2') format('woff2'),
+        url('Comme-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comme';
+    src: url('Comme-ExtraBold.woff2') format('woff2'),
+        url('Comme-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comme';
+    src: url('Comme-Regular.woff2') format('woff2'),
+        url('Comme-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comme';
+    src: url('Comme-Light.woff2') format('woff2'),
+        url('Comme-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comme';
+    src: url('Comme-ExtraLight.woff2') format('woff2'),
+        url('Comme-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comme';
+    src: url('Comme-Bold.woff2') format('woff2'),
+        url('Comme-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comme';
+    src: url('Comme-Medium.woff2') format('woff2'),
+        url('Comme-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comme';
+    src: url('Comme-SemiBold.woff2') format('woff2'),
+        url('Comme-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Comme';
+    src: url('Comme-Thin.woff2') format('woff2'),
+        url('Comme-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

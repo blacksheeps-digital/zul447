@@ -1,0 +1,12 @@
+/* Webfont: RadiantCharisma-Regular */@font-face {
+    font-family: 'RadiantCharisma';
+    src: url('RadiantCharisma-Regular.eot'); /* IE9 Compat Modes */
+    src: url('RadiantCharisma-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('RadiantCharisma-Regular.woff') format('woff'), /* Modern Browsers */
+         url('RadiantCharisma-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('RadiantCharisma-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,5 +1,15 @@
 // Layout Style
 .splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        display: block;
+        width: 100%;
+    }
+}
+.splide__slide {
     opacity: 0.3;
 }
 
@@ -9,10 +19,20 @@
 
 #main-slider img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     max-height: 600px;
 }
 
 #main-slider {
     margin-bottom: 2rem;
+}
+
+.gslide-image {
+    width: 80% !important;
+}
+
+.gslide-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important; /* You can use 'cover' or 'contain' based on your preference */
 }

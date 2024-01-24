@@ -12,11 +12,15 @@
 
   <!-- Custom styles for this template with bootstrap css -->
   <!-- build:css -->
+  <link href="assets/fonts/handwind/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link href="assets/fonts/conme/stylesheet.css" rel="stylesheet" type="text/css" />
+  <link href="assets/fonts/radiante/stylesheet.css" rel="stylesheet" type="text/css" />
   <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
   <!-- endbuild -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
   <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js " defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 
 <body>
@@ -27,22 +31,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item" href="#contato">Fale conosco</a></li>
+          <li><a class="dropdown-item" href="#galeria">Galeria</a></li>
+          <li><a class="dropdown-item" href="#plantas">Plantas</a></li>
         </ul>
-
-        <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <a class="navbar-brand" href="#">
           <!-- <img src='<?php echo IMG ?>' class='img-fluid' alt='' title='' loading='lazy'> -->
           <img src="assets/images/zul-logo.png" class="d-inline-block align-top" alt="" loading="lazy" width="30"
             height="30" />
-          <span class="font-weight-bold ms-2">Company Name</span>
         </a>
-        <div class="collapse navbar-collapse d-none" id="navbarCollapse">
+
+        <!-- <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <!-- <div class="collapse navbar-collapse d-none" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item active">
               <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -55,24 +58,24 @@
             </li>
           </ul>
 
-        </div>
+        </div> -->
       </div>
     </nav>
   </header>
 
   <main>
 
-    <section class="viver" style="background-image: url('assets/images/banner.png');">
+    <section class="viver" id="viver" style="background-image: url('assets/images/banner.png');">
       <!-- <section class="viver" style="background-image: url('<?php echo IMG ?>/banner.png');"> -->
       <div class="container h-100">
         <div class="row align-items-center justify-content-center h-100">
           <div class="col-md-2">
-            <h2>Charmoso
+            <h2 class="radiante">Charmoso
               para viver</h2>
           </div>
           <div class="col-md-2">
-            <h2 class="text-md-center">Inteligente
-              para investir</h2>
+            <h2 class="text-md-center radiante"><strong>Inteligente
+                para investir</strong></h2>
           </div>
         </div>
       </div>
@@ -81,7 +84,7 @@
 
 
 
-    <section class="zul bg-light-green">
+    <section class="zul bg-light-green" id="zul">
       <div class="container h-100">
         <div class="row align-items-stretch justify-content-center h-100">
           <div class="col-md-6 fixed order-1 order-md-0">
@@ -111,7 +114,7 @@
       </div>
     </section>
 
-    <section class="morada bg-beige">
+    <section class="morada bg-beige" id="contato">
       <div class="container h-100">
         <div class="row align-items-center justify-content-center h-100">
           <div class="col-md-12 text-center">
@@ -134,9 +137,9 @@
       <div class="container h-100">
         <div class="row align-items-center justify-content-center h-100">
           <div class="col-md-12">
-            <h1>O Santo Antônio Além do Carmo
-              é Bahia e Brasil no seu começo.</h1>
-            <p class="sub">
+            <h1 class="radiante color-beige">O Santo Antônio Além do Carmo
+              é <strong>Bahia </strong> e <strong> Brasil </strong> no seu começo.</h1>
+            <p class="sub handwind">
               Nós estamos no coração de Salvador.
             </p>
           </div>
@@ -145,10 +148,10 @@
     </section>
 
 
-    <section class="galeria">
+    <section class="galeria" id="galeria">
       <div class="container h-100">
         <div class="row align-items-center justify-content-center h-100">
-          <div class="col-md-12">
+          <div class="col-md-12 text-center mb-5">
             <h2>
               Conheça nossa
               galeria completa
@@ -164,15 +167,23 @@
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
-                    <img src='assets/images/gal1.png' class='img-fluid' alt='' title='' loading='lazy'>
+                    <a href="assets/images/banner.png" data-fancybox="gallery1">
+                      <img src="assets/images/banner.png" alt="image" />
+                    </a>
 
                   </li>
                   <li class="splide__slide">
-                    <img src='assets/images/gal2.png' class='img-fluid' alt='' title='' loading='lazy'>
+                    <a href="assets/images/gal1.png" data-fancybox="gallery1">
+                      <img src="assets/images/gal1.png" alt="image" />
+                    </a>
+                    <!-- <img src='assets/images/gal1.png' class='img-fluid' alt='' title='' loading='lazy'> -->
 
                   </li>
                   <li class="splide__slide">
-                    <img src='assets/images/gal1.png' class='img-fluid' alt='' title='' loading='lazy'>
+                    <a href="assets/images/gal2.png" data-fancybox="gallery1">
+                      <img src="assets/images/gal2.png" alt="image" />
+                    </a>
+                    <!-- <img src='assets/images/gal2.png' class='img-fluid' alt='' title='' loading='lazy'> -->
 
                   </li>
                 </ul>
@@ -199,41 +210,40 @@
       </div>
     </section>
 
-    <section class="plantas">
+    <section class="plantas bg-beige" id="plantas">
       <div class="container h-100">
         <div class="row align-items-center justify-content-center h-100">
           <div class="col-md-12 text-center">
             <h2>Plantas</h2>
           </div>
-          <div>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <div class="col-md-12">
+            <ul class="nav justify-content-center align-items-center gap-3" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                  type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                  type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Nome</button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                  type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                  type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Outro nome</button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                  type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
-                  type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false"
-                  disabled>Disabled</button>
+                  type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Exemplo</button>
               </li>
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                tabindex="0">...</div>
+                tabindex="0">
+                <img src='./assets/images/gal1.png' class='img-fluid' alt='' title='' loading='lazy'>
+              </div>
               <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                tabindex="0">...</div>
+                tabindex="0">
+                <img src='./assets/images/gal2.png' class='img-fluid' alt='' title='' loading='lazy'>
+              </div>
               <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                tabindex="0">...</div>
+                tabindex="0">Planta 1</div>
               <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
-                tabindex="0">...</div>
+                tabindex="0">Planta 1</div>
             </div>
 
           </div>
@@ -241,15 +251,13 @@
       </div>
     </section>
 
-    <section class="onde">
+    <section class="onde bg-light-green">
       <div class="container h-100">
         <div class="row align-items-center justify-content-center h-100">
-          <div class="col-md-12">
-            <h2>Onde estamos?</h2>
+          <div class="col-md-12 text-center">
+            <h2 class="color-beige">Onde estamos?</h2>
 
-            <iframe src="" frameborder="0" style="height: 400px; width: 100%; max-width: 100%;">
-
-            </iframe>
+            <img src='assets/images/banner.png' class='img-fluid' alt='' title='' loading='lazy'>
 
             <a href="" class="btn d-inline-block">Acessar</a>
           </div>
@@ -259,11 +267,26 @@
 
 
   </main>
-  <footer class="">
+  <footer class="bg-green">
     <div class="container">
       <div class="row align-items-center justify-content-center h-100">
-        <div class="col-md-12">
-          <p>
+        <div class="col-md-6 text-end pe-md-5">
+          <img src='assets/images/zul-logo.png' class='img-fluid' alt='' title='' loading='lazy'>
+        </div>
+
+        <div class="col-md-6 text-start">
+          <i class="px-3">
+            <a href="https://linktr.ee/moradazul449"><img src='./assets/images/tree.png' class='img-fluid' alt=''
+                title='' loading='lazy'></a>
+          </i>
+
+          <i>
+            <a href="https://www.instagram.com/moradazul449/"><img src='./assets/images/inst.png' class='img-fluid'
+                alt='' title='' loading='lazy'></a>
+          </i>
+        </div>
+        <div class="col-md-12 text-center">
+          <p class="text-light mt-3">
             &copy; ZUL 449 | Todos os direitos reservados
           </p>
 

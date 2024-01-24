@@ -11992,8 +11992,24 @@ textarea.form-control-lg {
   background-color: #fcfbe8;
 }
 
+.color-beige {
+  color: #fcfbe8;
+}
+
+.radiante {
+  font-family: RadiantCharismaLight;
+}
+
+.handwind {
+  font-family: Handwind;
+}
+
+.comne {
+  font-family: comme;
+}
+
 section {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .btn {
@@ -12016,6 +12032,37 @@ section {
   fill: #447979;
   height: 40px;
   width: 40px;
+}
+
+header .navbar-toggler-icon {
+  filter: invert(100%);
+}
+header .dropdown-menu {
+  padding: 20px;
+  border-radius: 0;
+  background-color: #447979;
+}
+header .dropdown-menu * {
+  color: white;
+}
+header .dropdown-item:hover {
+  background-color: #6dc0b4;
+}
+header .dropdown-menu[data-bs-popper] {
+  top: 95%;
+}
+header .dropdown-toggle {
+  background-color: transparent;
+  padding: 10px 30px;
+}
+header .dropdown-toggle:hover {
+  background-color: #6dc0b4;
+}
+header .dropdown-toggle:hover .navbar-toggler-icon {
+  filter: none;
+}
+header .dropdown-toggle::after {
+  display: none;
 }
 
 .viver {
@@ -12116,6 +12163,10 @@ section {
     background-size: contain;
   }
 }
+.morada .btn:hover {
+  background-color: #447979;
+  color: #fcfbe8;
+}
 
 .hero {
   padding: 8rem;
@@ -12125,9 +12176,60 @@ section {
 }
 .hero h1, .hero .h1 {
   color: white;
+  text-align: center;
 }
 .hero .sub {
+  text-align: center;
   color: #0d1e41;
+}
+
+.plantas * {
+  color: #447979;
+}
+.plantas .nav-link {
+  border: 1px solid transparent;
+}
+.plantas .nav-link:hover {
+  color: inherit;
+  box-shadow: 0px 2px 5px #447979;
+}
+.plantas .nav-link.active {
+  border-bottom-color: #447979;
+}
+.plantas .tab-content {
+  height: 600px;
+  margin-top: 4rem;
+}
+.plantas .tab-content .tab-pane {
+  height: 600px;
+  max-height: 600px;
+  text-align: center;
+}
+.plantas .tab-content img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.onde .btn {
+  color: white;
+  border-color: white;
+}
+.onde .btn:hover {
+  background-color: white;
+  color: #6dc0b4;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.splide__slide a {
+  display: block;
+  width: 100%;
 }
 
 .splide__slide {
@@ -12140,13 +12242,24 @@ section {
 
 #main-slider img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-height: 600px;
 }
 
 #main-slider {
   margin-bottom: 2rem;
+}
+
+.gslide-image {
+  width: 80% !important;
+}
+
+.gslide-image img {
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important; /* You can use 'cover' or 'contain' based on your preference */
 }
 
 /* CUSTOM STYLES

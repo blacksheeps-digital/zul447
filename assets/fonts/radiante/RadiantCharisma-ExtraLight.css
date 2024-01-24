@@ -1,0 +1,17 @@
+/* Webfont: RadiantCharisma-ExtraLight */
+@font-face {
+    font-family: 'RadiantCharismaExtLt';
+    src: url('RadiantCharisma-ExtraLight.eot');
+    /* IE9 Compat Modes */
+    src: url('RadiantCharisma-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('RadiantCharisma-ExtraLight.woff') format('woff'),
+        /* Modern Browsers */
+        url('RadiantCharisma-ExtraLight.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('RadiantCharisma-ExtraLight.ttf') format('truetype');
+    /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: lighter;
+    text-rendering: optimizeLegibility;
+}

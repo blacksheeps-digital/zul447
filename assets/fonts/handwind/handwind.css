@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Handwind';
+    src: url('fonts/Handwind.otf') format('opentype'),
+        url('fonts/Handwind.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -27,4 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
     main.sync(thumbnails);
     main.mount();
     thumbnails.mount();
+
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
 });

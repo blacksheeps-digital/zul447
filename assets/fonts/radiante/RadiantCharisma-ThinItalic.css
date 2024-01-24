@@ -1,0 +1,12 @@
+/* Webfont: RadiantCharisma-ThinItalic */@font-face {
+    font-family: 'RadiantCharismaThin';
+    src: url('RadiantCharisma-ThinItalic.eot'); /* IE9 Compat Modes */
+    src: url('RadiantCharisma-ThinItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('RadiantCharisma-ThinItalic.woff') format('woff'), /* Modern Browsers */
+         url('RadiantCharisma-ThinItalic.woff2') format('woff2'), /* Modern Browsers */
+         url('RadiantCharisma-ThinItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

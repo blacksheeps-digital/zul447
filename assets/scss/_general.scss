@@ -1,6 +1,6 @@
 // General Style
 section {
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .btn {
@@ -24,6 +24,44 @@ section {
     background-color: white;
     padding: 10px;
     border-radius: 50px;
+}
+
+header {
+    .navbar-toggler-icon {
+        filter: invert(100%);
+    }
+    .dropdown-menu {
+        padding: 20px;
+        border-radius: 0;
+        background-color: $primary;
+        * {
+            color: white;
+        }
+    }
+
+    .dropdown-item:hover {
+        background-color: $secondary;
+    }
+
+    .dropdown-menu[data-bs-popper] {
+        top: 95%;
+    }
+
+    .dropdown-toggle {
+        background-color: transparent;
+        padding: 10px 30px;
+
+        &:hover {
+            background-color: $secondary;
+            .navbar-toggler-icon {
+                filter: none;
+            }
+        }
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
 }
 
 .viver {
@@ -113,6 +151,14 @@ section {
         background-position: center center;
         background-size: contain;
     }
+
+    .btn {
+        &:hover {
+            background-color: $primary;
+
+            color: $beige;
+        }
+    }
 }
 
 .hero {
@@ -120,9 +166,59 @@ section {
     @include background-cover;
     h1 {
         color: white;
+        text-align: center;
     }
 
     .sub {
+        text-align: center;
         color: $blue;
+    }
+}
+
+.plantas {
+    * {
+        color: $primary;
+    }
+
+    .nav-link {
+        border: 1px solid transparent;
+
+        &:hover {
+            color: inherit;
+            box-shadow: 0px 2px 5px $primary;
+        }
+    }
+
+    .nav-link.active {
+        border-bottom-color: $primary;
+    }
+
+    .tab-content {
+        height: 600px;
+        margin-top: 4rem;
+
+        .tab-pane {
+            height: 600px;
+            max-height: 600px;
+            text-align: center;
+        }
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+
+.onde {
+    .btn {
+        color: white;
+        border-color: white;
+        &:hover {
+            background-color: white;
+            color: $secondary;
+        }
     }
 }
