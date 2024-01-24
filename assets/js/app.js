@@ -1,18 +1,30 @@
-var swiper = new Swiper(".mySwiper", {
-    loop: true,
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-});
-var swiper2 = new Swiper(".mySwiper2", {
-    loop: true,
-    spaceBetween: 10,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-        swiper: swiper,
-    },
+document.addEventListener('DOMContentLoaded', function () {
+    var main = new Splide('#main-slider', {
+        type: 'fade',
+        rewind: true,
+        pagination: false,
+        arrows: false,
+        lazyLoad: 'nearby',
+    });
+
+    var thumbnails = new Splide('#thumbnail-slider', {
+        fixedWidth: 100,
+        fixedHeight: 60,
+        gap: 10,
+        rewind: true,
+        pagination: false,
+        cover: true,
+        isNavigation: true,
+        focus: 'center',
+        breakpoints: {
+            600: {
+                fixedWidth: 60,
+                fixedHeight: 44,
+            },
+        },
+    });
+
+    main.sync(thumbnails);
+    main.mount();
+    thumbnails.mount();
 });
