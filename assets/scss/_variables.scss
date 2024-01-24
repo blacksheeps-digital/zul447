@@ -3,6 +3,7 @@
 $primary: #447979;
 $secondary: #6dc0b4;
 $beige: #fcfbe8;
+$blue: #0d1e41;
 
 .bg-green {
     background-color: $primary;
@@ -14,4 +15,7 @@ $beige: #fcfbe8;
 
 .bg-light-green {
     background-color: $secondary;
+}
+.bg-beige {
+    background-color: $beige;
 }

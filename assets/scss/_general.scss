@@ -1,1 +1,128 @@
 // General Style
+section {
+    padding: 2rem 0;
+}
+
+.btn {
+    padding: 10px 65px;
+    border: 1px solid $primary;
+    border-radius: 50px;
+    font-weight: bold;
+    display: block;
+}
+
+.whatsapp {
+    .bi-whatsapp {
+        fill: $primary;
+        height: 40px;
+        width: 40px;
+    }
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.viver {
+    @include background-cover;
+
+    @include media-breakpoint-up(lg) {
+        padding: 6rem 0 22rem;
+    }
+    @include media-breakpoint-up(xl) {
+        padding: 6rem 0 27rem;
+    }
+    @include media-breakpoint-up(xxl) {
+        padding: 6rem 0 30rem;
+    }
+
+    * {
+        color: $blue;
+    }
+}
+
+.zul {
+    position: relative;
+    * {
+        color: $primary;
+    }
+    @include media-breakpoint-up(md) {
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("/assets/images/zul.png");
+            @include background-cover;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+        }
+        .fixed {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url("/assets/images/stamp.png");
+                @include background-cover;
+                display: block;
+                top: 0;
+                right: -102px;
+                height: 170px;
+                width: 204px;
+                z-index: 100;
+            }
+        }
+    }
+
+    .text {
+        padding: 2rem;
+        h2 {
+            position: relative;
+            @include media-breakpoint-up(md) {
+                padding-top: 10rem;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background-image: url("/assets/images/zul-starts.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: block;
+                    top: 0;
+                    left: 0%;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.morada {
+    * {
+        color: $primary;
+    }
+    @include media-breakpoint-up(md) {
+        padding: 10rem 0;
+        background-image: url("/assets/images/morada.png");
+        // @include background-cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+}
+
+.hero {
+    padding: 8rem;
+    @include background-cover;
+    h1 {
+        color: white;
+    }
+
+    .sub {
+        color: $blue;
+    }
+}

@@ -11988,8 +11988,217 @@ textarea.form-control-lg {
   background-color: #6dc0b4;
 }
 
-.test {
+.bg-beige {
+  background-color: #fcfbe8;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.btn {
+  padding: 10px 65px;
+  border: 1px solid #447979;
+  border-radius: 50px;
+  font-weight: bold;
   display: block;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+.whatsapp .bi-whatsapp {
+  fill: #447979;
+  height: 40px;
+  width: 40px;
+}
+
+.viver {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media (min-width: 992px) {
+  .viver {
+    padding: 6rem 0 22rem;
+  }
+}
+@media (min-width: 1200px) {
+  .viver {
+    padding: 6rem 0 27rem;
+  }
+}
+@media (min-width: 1400px) {
+  .viver {
+    padding: 6rem 0 30rem;
+  }
+}
+.viver * {
+  color: #0d1e41;
+}
+
+.zul {
+  position: relative;
+}
+.zul * {
+  color: #447979;
+}
+@media (min-width: 768px) {
+  .zul::before {
+    position: absolute;
+    content: "";
+    background-image: url("/assets/images/zul.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+  }
+  .zul .fixed {
+    position: relative;
+  }
+  .zul .fixed::after {
+    position: absolute;
+    content: "";
+    background-image: url("/assets/images/stamp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    top: 0;
+    right: -102px;
+    height: 170px;
+    width: 204px;
+    z-index: 100;
+  }
+}
+.zul .text {
+  padding: 2rem;
+}
+.zul .text h2, .zul .text .h2 {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .zul .text h2, .zul .text .h2 {
+    padding-top: 10rem;
+  }
+  .zul .text h2::before, .zul .text .h2::before {
+    position: absolute;
+    content: "";
+    background-image: url("/assets/images/zul-starts.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.morada * {
+  color: #447979;
+}
+@media (min-width: 768px) {
+  .morada {
+    padding: 10rem 0;
+    background-image: url("/assets/images/morada.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+.hero {
+  padding: 8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hero h1, .hero .h1 {
+  color: white;
+}
+.hero .sub {
+  color: #0d1e41;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+  max-height: 600px;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 15%;
+  max-height: 100px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+  max-height: 600px;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 15%;
+  max-height: 100px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-wrapper {
+  max-height: 100%;
 }
 
 /* CUSTOM STYLES
