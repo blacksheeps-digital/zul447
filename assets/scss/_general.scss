@@ -31,6 +31,10 @@ p {
 }
 
 header {
+    .navbar-brand img {
+        height: 46px;
+        width: 106px;
+    }
     .navbar-toggler-icon {
         filter: invert(100%);
     }
@@ -69,16 +73,44 @@ header {
 }
 
 .viver {
+    margin-top: 72px;
     @include background-cover;
+    @include media-breakpoint-down(lg) {
+        background-image: url("/assets/images/banner-mob.png") !important;
+    }
+    padding: 4rem 0 0;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    h2 {
+        @include rhythm(50, 60);
+        text-align: center;
+        @include media-breakpoint-down(lg) {
+            @include rhythm(38, 45);
+        }
+    }
+
+    .radiante {
+        padding: 0 3rem;
+        @include media-breakpoint-down(lg) {
+            padding: 0 4rem;
+        }
+    }
+
+    .radiante-reg {
+        @include media-breakpoint-down(lg) {
+            padding: 2rem 2rem 0;
+        }
+    }
 
     @include media-breakpoint-up(lg) {
-        padding: 6rem 0 22rem;
+        padding: 6rem 0 34rem;
     }
     @include media-breakpoint-up(xl) {
-        padding: 6rem 0 27rem;
+        padding: 6rem 0 34rem;
     }
     @include media-breakpoint-up(xxl) {
-        padding: 6rem 0 30rem;
+        padding: 6rem 0 38rem;
     }
 
     * {
@@ -91,6 +123,14 @@ header {
     * {
         color: $primary;
     }
+    p {
+        @include rhythm(20, 24);
+
+        @include media-breakpoint-down(lg) {
+            @include rhythm(16, 20);
+        }
+    }
+
     @include media-breakpoint-down(lg) {
         padding-top: 1rem;
         padding-bottom: 0;
@@ -239,15 +279,29 @@ header {
 
 .hero {
     padding: 8rem;
+
+    @include media-breakpoint-down(lg) {
+        padding: 5rem 2rem;
+    }
     @include background-cover;
     h1 {
         color: white;
         text-align: center;
+        @include rhythm(60, 70);
+
+        @include media-breakpoint-down(lg) {
+            @include rhythm(40, 50);
+        }
     }
 
     .sub {
         text-align: center;
         color: $blue;
+        @include rhythm(55, 60);
+
+        @include media-breakpoint-down(lg) {
+            @include rhythm(25, 30);
+        }
     }
 }
 
@@ -336,4 +390,8 @@ header {
             color: $secondary;
         }
     }
+}
+
+footer {
+    padding-top: 2rem;
 }

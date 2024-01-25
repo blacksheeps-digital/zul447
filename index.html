@@ -25,7 +25,7 @@
 
 <body>
   <header>
-    <nav class="navbar bg-green">
+    <nav class="navbar bg-green fixed-top">
       <div class="container-fluid">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
@@ -41,6 +41,10 @@
             height="30" />
         </a>
 
+        <div>
+          placeholder
+        </div>
+
       </div>
     </nav>
   </header>
@@ -48,14 +52,13 @@
   <main>
 
     <section class="viver" id="viver" style="background-image: url('assets/images/banner.png');">
-      <!-- <section class="viver" style="background-image: url('<?php echo IMG ?>/banner.png');"> -->
       <div class="container h-100">
         <div class="row align-items-center justify-content-center h-100">
-          <div class="col-md-2">
+          <div class="col-md-4">
             <h2 class="radiante">Charmoso
               para viver</h2>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-4">
             <h2 class="text-md-center radiante-reg">
               <strong>
                 Inteligente
@@ -249,8 +252,14 @@
         <div class="row align-items-center justify-content-center h-100">
           <div class="col-md-12 text-center">
             <h2 class="color-beige radiante">Onde estamos?</h2>
+          </div>
+
+          <div class="col-md-12 text-center p-0">
 
             <img src='assets/images/banner.png' class='img-fluid' alt='' title='' loading='lazy'>
+          </div>
+
+          <div class="col-md-12 text-center">
 
             <a href="" class="btn d-inline-block">Acessar</a>
           </div>
@@ -263,11 +272,11 @@
   <footer class="bg-green">
     <div class="container">
       <div class="row align-items-center justify-content-center h-100">
-        <div class="col-md-6 text-end pe-md-5">
+        <div class="col-md-6 text-center text-md-end pe-md-5">
           <img src='assets/images/zul-logo.png' class='img-fluid' alt='' title='' loading='lazy'>
         </div>
 
-        <div class="col-md-6 text-start">
+        <div class="col-md-6 text-center text-md-start mt-md-0 my-4">
           <i class="px-3">
             <a href="https://linktr.ee/moradazul449"><img src='./assets/images/tree.png' class='img-fluid' alt=''
                 title='' loading='lazy'></a>
@@ -291,7 +300,7 @@
         <div class="col-md-12"></div>
       </div>
       <div class="col-md-12 text-center">
-        <p class="bg-secondary text-white">
+        <p class="bg-secondary text-white m-0">
           &copy; <a href="" class="text-white text-decoration-none">Desenvolvido por STEP</a>
         </p>
 
