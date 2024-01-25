@@ -3,6 +3,10 @@ section {
     padding: 4rem 0;
 }
 
+p {
+    font-family: comme;
+}
+
 .btn {
     padding: 10px 65px;
     border: 1px solid $primary;
@@ -87,6 +91,30 @@ header {
     * {
         color: $primary;
     }
+    @include media-breakpoint-down(lg) {
+        padding-top: 1rem;
+        padding-bottom: 0;
+
+        * {
+            text-align: center;
+        }
+
+        .fixed {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url("/assets/images/stamp.png");
+                @include background-cover;
+                display: block;
+                top: -20px;
+                right: 20%;
+                height: 85px;
+                width: 102px;
+                z-index: 100;
+            }
+        }
+    }
     @include media-breakpoint-up(md) {
         &::before {
             position: absolute;
@@ -120,8 +148,11 @@ header {
         padding: 2rem;
         h2 {
             position: relative;
+            @include rhythm(60, 70);
+
             @include media-breakpoint-up(md) {
                 padding-top: 10rem;
+                @include rhythm(60, 70);
                 &::before {
                     position: absolute;
                     content: "";
@@ -129,10 +160,37 @@ header {
                     background-size: contain;
                     background-repeat: no-repeat;
                     display: block;
-                    top: 0;
-                    left: 0%;
-                    height: 100%;
-                    width: 100%;
+                    top: 30%;
+                    left: 60%;
+                    height: 70%;
+                    width: 60%;
+                }
+            }
+            @include media-breakpoint-up(lg) {
+                @include rhythm(80, 90);
+                &::before {
+                    top: 20%;
+                    left: 40%;
+                    height: 70%;
+                    width: 60%;
+                }
+            }
+            @include media-breakpoint-up(xl) {
+                @include rhythm(90, 100);
+                &::before {
+                    top: 0%;
+                    left: 30%;
+                    height: 80%;
+                    width: 70%;
+                }
+            }
+            @include media-breakpoint-up(xxl) {
+                @include rhythm(110, 120);
+                &::before {
+                    top: -20%;
+                    left: 30%;
+                    height: 90%;
+                    width: 80%;
                 }
             }
         }
@@ -143,7 +201,25 @@ header {
     * {
         color: $primary;
     }
-    @include media-breakpoint-up(md) {
+    h2 {
+        @include rhythm(70, 80);
+    }
+
+    p {
+        @include rhythm(40, 50);
+    }
+
+    @include media-breakpoint-down(lg) {
+        h2 {
+            @include rhythm(50, 80);
+        }
+
+        p {
+            @include rhythm(30, 50);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
         padding: 10rem 0;
         background-image: url("/assets/images/morada.png");
         // @include background-cover;
@@ -176,8 +252,21 @@ header {
 }
 
 .plantas {
+    h2 {
+        @include rhythm(70, 80);
+
+        @include media-breakpoint-down(lg) {
+            @include rhythm(45, 50);
+        }
+    }
     * {
         color: $primary;
+    }
+
+    @include media-breakpoint-down(lg) {
+        .nav {
+            overflow-x: scroll;
+        }
     }
 
     .nav-link {
@@ -197,10 +286,17 @@ header {
         height: 600px;
         margin-top: 4rem;
 
+        @include media-breakpoint-down(lg) {
+            height: 400px;
+        }
         .tab-pane {
             height: 600px;
             max-height: 600px;
             text-align: center;
+
+            @include media-breakpoint-down(lg) {
+                height: 400px;
+            }
         }
 
         img {
@@ -212,10 +308,29 @@ header {
     }
 }
 
+.galeria {
+    h2 {
+        @include rhythm(70, 80);
+
+        @include media-breakpoint-down(lg) {
+            @include rhythm(45, 50);
+        }
+    }
+}
+
 .onde {
+    h2 {
+        @include rhythm(70, 80);
+        margin-bottom: 2rem;
+        @include media-breakpoint-down(lg) {
+            @include rhythm(45, 50);
+        }
+    }
     .btn {
         color: white;
         border-color: white;
+
+        margin-top: 2rem;
         &:hover {
             background-color: white;
             color: $secondary;

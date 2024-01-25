@@ -12000,6 +12000,10 @@ textarea.form-control-lg {
   font-family: RadiantCharismaLight;
 }
 
+.radiante-reg {
+  font-family: RadiantCharismaSemBd;
+}
+
 .handwind {
   font-family: Handwind;
 }
@@ -12010,6 +12014,10 @@ textarea.form-control-lg {
 
 section {
   padding: 4rem 0;
+}
+
+p {
+  font-family: comme;
 }
 
 .btn {
@@ -12095,6 +12103,32 @@ header .dropdown-toggle::after {
 .zul * {
   color: #447979;
 }
+@media (max-width: 991.98px) {
+  .zul {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  .zul * {
+    text-align: center;
+  }
+  .zul .fixed {
+    position: relative;
+  }
+  .zul .fixed::after {
+    position: absolute;
+    content: "";
+    background-image: url("/assets/images/stamp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    top: -20px;
+    right: 20%;
+    height: 85px;
+    width: 102px;
+    z-index: 100;
+  }
+}
 @media (min-width: 768px) {
   .zul::before {
     position: absolute;
@@ -12132,10 +12166,18 @@ header .dropdown-toggle::after {
 }
 .zul .text h2, .zul .text .h2 {
   position: relative;
+  font-size: 60px;
+  font-size: 3.75rem;
+  line-height: 70px;
+  line-height: 4.375rem;
 }
 @media (min-width: 768px) {
   .zul .text h2, .zul .text .h2 {
     padding-top: 10rem;
+    font-size: 60px;
+    font-size: 3.75rem;
+    line-height: 70px;
+    line-height: 4.375rem;
   }
   .zul .text h2::before, .zul .text .h2::before {
     position: absolute;
@@ -12144,17 +12186,85 @@ header .dropdown-toggle::after {
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
-    top: 0;
-    left: 0%;
-    height: 100%;
-    width: 100%;
+    top: 30%;
+    left: 60%;
+    height: 70%;
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .zul .text h2, .zul .text .h2 {
+    font-size: 80px;
+    font-size: 5rem;
+    line-height: 90px;
+    line-height: 5.625rem;
+  }
+  .zul .text h2::before, .zul .text .h2::before {
+    top: 20%;
+    left: 40%;
+    height: 70%;
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .zul .text h2, .zul .text .h2 {
+    font-size: 90px;
+    font-size: 5.625rem;
+    line-height: 100px;
+    line-height: 6.25rem;
+  }
+  .zul .text h2::before, .zul .text .h2::before {
+    top: 0%;
+    left: 30%;
+    height: 80%;
+    width: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  .zul .text h2, .zul .text .h2 {
+    font-size: 110px;
+    font-size: 6.875rem;
+    line-height: 120px;
+    line-height: 7.5rem;
+  }
+  .zul .text h2::before, .zul .text .h2::before {
+    top: -20%;
+    left: 30%;
+    height: 90%;
+    width: 80%;
   }
 }
 
 .morada * {
   color: #447979;
 }
-@media (min-width: 768px) {
+.morada h2, .morada .h2 {
+  font-size: 70px;
+  font-size: 4.375rem;
+  line-height: 80px;
+  line-height: 5rem;
+}
+.morada p {
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 50px;
+  line-height: 3.125rem;
+}
+@media (max-width: 991.98px) {
+  .morada h2, .morada .h2 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 80px;
+    line-height: 5rem;
+  }
+  .morada p {
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 50px;
+    line-height: 3.125rem;
+  }
+}
+@media (min-width: 1200px) {
   .morada {
     padding: 10rem 0;
     background-image: url("/assets/images/morada.png");
@@ -12183,8 +12293,27 @@ header .dropdown-toggle::after {
   color: #0d1e41;
 }
 
+.plantas h2, .plantas .h2 {
+  font-size: 70px;
+  font-size: 4.375rem;
+  line-height: 80px;
+  line-height: 5rem;
+}
+@media (max-width: 991.98px) {
+  .plantas h2, .plantas .h2 {
+    font-size: 45px;
+    font-size: 2.8125rem;
+    line-height: 50px;
+    line-height: 3.125rem;
+  }
+}
 .plantas * {
   color: #447979;
+}
+@media (max-width: 991.98px) {
+  .plantas .nav {
+    overflow-x: scroll;
+  }
 }
 .plantas .nav-link {
   border: 1px solid transparent;
@@ -12200,10 +12329,20 @@ header .dropdown-toggle::after {
   height: 600px;
   margin-top: 4rem;
 }
+@media (max-width: 991.98px) {
+  .plantas .tab-content {
+    height: 400px;
+  }
+}
 .plantas .tab-content .tab-pane {
   height: 600px;
   max-height: 600px;
   text-align: center;
+}
+@media (max-width: 991.98px) {
+  .plantas .tab-content .tab-pane {
+    height: 400px;
+  }
 }
 .plantas .tab-content img {
   -o-object-fit: contain;
@@ -12213,9 +12352,40 @@ header .dropdown-toggle::after {
   display: block;
 }
 
+.galeria h2, .galeria .h2 {
+  font-size: 70px;
+  font-size: 4.375rem;
+  line-height: 80px;
+  line-height: 5rem;
+}
+@media (max-width: 991.98px) {
+  .galeria h2, .galeria .h2 {
+    font-size: 45px;
+    font-size: 2.8125rem;
+    line-height: 50px;
+    line-height: 3.125rem;
+  }
+}
+
+.onde h2, .onde .h2 {
+  font-size: 70px;
+  font-size: 4.375rem;
+  line-height: 80px;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 991.98px) {
+  .onde h2, .onde .h2 {
+    font-size: 45px;
+    font-size: 2.8125rem;
+    line-height: 50px;
+    line-height: 3.125rem;
+  }
+}
 .onde .btn {
   color: white;
   border-color: white;
+  margin-top: 2rem;
 }
 .onde .btn:hover {
   background-color: white;

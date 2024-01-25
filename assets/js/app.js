@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
         focus: 'center',
         breakpoints: {
             600: {
-                fixedWidth: 60,
-                fixedHeight: 44,
+                fixedWidth: 100,
+                fixedHeight: 65,
             },
         },
     });
